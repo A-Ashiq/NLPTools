@@ -31,6 +31,7 @@ jobs:
           pip install spacy
 
       - name: Download English Language model data
+        run: |
           python -m spacy download en_core_web_sm
 
       - name: Install dependencies
