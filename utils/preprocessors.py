@@ -12,5 +12,5 @@ def convert_token_to_lemma(token) -> str:
     return token.lemma_.strip().lower()
 
 
-def lemmatize_functional_words(complete_doc) -> list[str]:
-    return [convert_token_to_lemma(token) for token in complete_doc if is_token_allowed(token)]
+def lemmatize_functional_words(nlp_document) -> list[str]:
+    return [convert_token_to_lemma(token) for token in nlp_document if is_token_allowed(token)]

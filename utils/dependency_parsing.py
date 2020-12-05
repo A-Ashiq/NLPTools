@@ -7,4 +7,4 @@ def parse_sentence_for_dependencies(sentence) -> None:
 
 
 def flatten_tree(tree) -> str:
-    return ''.join([token.text_with_ws for token in list(tree)]).strip()
+    return "".join((token.text_with_ws for token in list(tree))).strip()
