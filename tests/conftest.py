@@ -10,3 +10,8 @@ def file_finder(relative_path: str) -> Path:
 @pytest.fixture(scope="module")
 def first_sample_txt_file_path() -> Path:
     return file_finder('sample_files/doc1.txt')
+
+
+@pytest.fixture(scope="module")
+def sample_raw_string() -> str:
+    return "Here is some sample text to be parsed. Apples are tasty and so is coffee. "
