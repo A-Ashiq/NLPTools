@@ -37,6 +37,6 @@ jobs:
         run: |
           pip install -r requirements-ci.txt
 
-#      - name: Test with pytest
-#        run: |
-#          python -m pytest -v
+      - name: Test with pytest
+        run: |
+          python -m pytest -v
